@@ -1,17 +1,4 @@
-export const lightTheme = {
-    name: 'light',
-    body: '#fefefe',
-    text: '#363537',
-    subtext: '#707070',
-    secondary: '#CCE8FF', //
-    tertiary: '#75cac3',
-    accent: '#263859',
-    boxShadow: '0px 2px 10px -2px rgba(134, 134, 134, 0.5)',
-    contrastText: '#FAFAFA',
-    footerColor: '#F0F0F0',
-  }
-  
-  export const darkTheme = {
+export const darkTheme = {
     name: 'dark',
     body: '#17223b',
     text: '#FAFAFA',
