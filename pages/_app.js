@@ -11,11 +11,34 @@ import "aos/dist/aos.css";
 function MyApp({ Component, pageProps }) {
 
   const [theme, setTheme] = useState("dark")
-  const currentTheme = darkTheme
+
+  useEffect(() => {
+    if (localStorage.getItem('theme')) {
+      setTheme(localStorage.getItem('theme'))
+    } else {
+      setTheme('light')
+    }
+  }, [])
+
+  useEffect(() => {
+    localStorage.setItem('theme', theme);
+  }, [theme])
+
+  useEffect(() => {
+    AOS.init({
+      duration: 500
+    });
+  }, []);
+
+  const toggleTheme = () => {
+    theme == 'light' ? setTheme('dark') : setTheme('light')
+  }
+
+  const currentTheme = theme === 'light' ? lightTheme : darkTheme
 
   return (
     <ChakraProvider>
-      <ThemeProvider theme={theme == darkTheme}>
+      <ThemeProvider theme={theme == 'light' ? lightTheme : darkTheme}>
         <GlobalStyles />
         <Layout toggleTheme={toggleTheme} currentTheme={currentTheme} style={{ backgroundColor: currentTheme.secondary }}>
           <Component {...pageProps} currentTheme={currentTheme} />
