@@ -14,16 +14,25 @@
 
 
 .workmain{
-  padding: 0 20vw;
+  padding-bottom:15px;
+  background-color: #263859;
 }
 
-.parentofparentcard{
+/* Center the entire project container horizontally */
+.parentofparentcard {
   display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  text-align: center;
+  margin-bottom: 4rem; /* Space between projects */
 }
 
-.parentcard{
-    padding: 1rem;
-    width:fit-content;
+/* Center the contents within each project card */
+.parentcard {
+  margin: 0 auto; /* Center the card itself */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center all contents inside the card */
 }
 
 .imageandsocials{
@@ -56,6 +65,7 @@
     display: flex;
     justify-content: space-between;
     width: 60vmin;
+    margin-bottom: 1rem; /* Adjust this value as needed for spacing */
 }
 
 .cardbottom{
@@ -94,6 +104,12 @@
     margin-top: 2rem;
     overflow: hidden;
   }
+
+  .mobileCarousel {
+    width: 60%;
+    height: 120vmin;
+    /* Add any additional styling specific to mobile carousel */
+ }
   
   .inner {
     white-space: nowrap;
@@ -122,7 +138,7 @@
   .experienceWrapper{
     max-width: 75vw;
     margin: auto;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
 
   .experienceCardWrapper{
@@ -135,7 +151,7 @@
   
   .experienceCard{
     margin: 0 1rem;
-    max-width: 400px;
+    max-width: 600px;
     transition: 0.2s ease-in;
   }
 

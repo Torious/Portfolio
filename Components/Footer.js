@@ -6,7 +6,21 @@ const Footer = ({ currentTheme }) => {
     return (
         <div className={styles.footermain} style={{ backgroundColor: currentTheme.footerColor, color: currentTheme.subtext }}>
             <div className={styles.footertable}>
-                <Link href='/' legacyBehavior><a><h2 className={styles.footerlogo}>{userinfo.logoText}</h2></a></Link>
+                <ul><li>
+                    <Link href='/' legacyBehavior><a><h2 className={styles.footerlogo}>{userinfo.logoText}</h2></a></Link>
+                </li>
+                    <li><div style={{ textAlign: 'center', paddingTop: '0.5rem' }}>
+                        <Link href={`mailto:${userinfo.contact.email ? userinfo.contact.email.toLowerCase() : ''}`} legacyBehavior>
+                        <a style={{ textTransform: 'lowercase' }}>{userinfo.contact.email?.toLowerCase()}</a>
+                        </Link>
+                    </div>
+                        {
+                            userinfo.contact.phone ?
+                                <div style={{ textAlign: 'center', paddingTop: '0.2rem', color: currentTheme.tertiary }}>
+                                    <Link href={`tel:${userinfo.contact.countrycode}${userinfo.contact.phone}`} legacyBehavior><a>{`${userinfo.contact.countrycode}${userinfo.contact.phone}`}</a></Link>
+                                </div> : null
+                        }</li>
+                </ul>
                 <ul>
                     <li className={styles.listHeading}>Socials</li>
                     {userinfo.socials ?

@@ -36,10 +36,12 @@
 }
 
 .socialIconDiv{
-  width: 60%;
+  width: 20%;
   display: flex;
-  justify-content: space-evenly;
-  margin: 1.5rem auto;
+  justify-content: center;
+  gap: 50px;
+  position:relative;
+  top: 10px;
 }
 
 .socialIcon{

@@ -5,7 +5,7 @@ import { userinfo, headings } from '../Constants/userinfo'
 
 const Experiences = ({ currentTheme }) => {
     return (
-        <div className={styles.experienceWrapper}>
+        <div className={styles.experienceWrapper} style={{ backgroundColor: currentTheme.body }}>
             <h1 className={styles.workHeading} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">{headings.experience}</h1>
             <div className={styles.experienceCardWrapper} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 {

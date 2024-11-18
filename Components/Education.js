@@ -32,9 +32,6 @@ const Education = ({ currentTheme }) => {
                     <div style={{ clear: 'both' }}></div>
                 </ul>
             </div>
-
-            <div style={{ textAlign: 'center', paddingBottom: '2rem' }}><Link href="/#about" legacyBehavior><a className={styles.cta3} style={{ background: currentTheme.accent, color: currentTheme.contrastText }}>{ctaTexts.educationCTA} <span>&gt;</span></a></Link></div>
-
         </div>
     )
 }

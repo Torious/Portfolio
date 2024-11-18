@@ -1,6 +1,7 @@
 //PLEASE FOLLOW THE FORMAT OF THIS FILE.
 
-import { faGithubAlt, faLinkedinIn, faMediumM, faFacebook, faTwitter, faInstagram, faYoutube, faBehance } from "@fortawesome/free-brands-svg-icons"
+import { faEnvelope, faGithubAlt, faLinkedinIn, faMediumM, faFacebook, faTwitter, faInstagram, faYoutube, faBehance } from "@fortawesome/free-brands-svg-icons"
+import potechLogo from '../public/potech.png';
 
 export const userinfo = {
     logoText: "Nizar El Jurdi", //This text is visible on your navbar and footer like your logo.
@@ -18,8 +19,8 @@ export const userinfo = {
     ],
     greeting: {
         //this text goes on your landing page
-        title: "Hey there, I am Nizar.",
-        subtitle: "Nizar is a Junior Software Engineer and Full-Stack Developer from Montreal, QC, with a Bachelor in Software Engineering from Concordia University. Always ready to learn and take on new challenges, Nizar is keen on making meaningful contributions through his work."
+        title: "Hey there, I'm Nizar.",
+        subtitle: "A Full Stack Developer with a Software Engineering degree from Concordia University, Montreal. When I’m not coding, I thrive on strategic thinking and teamwork through competitive games like Chess and Valorant. Growing up both Lebanese and Ukrainian has provided me with a unique perspective towards different cultures and life. Ready to turn coffee into code together?"
     },
     capabilities: [
         //this text goes on your home page in table format.
@@ -45,9 +46,9 @@ export const userinfo = {
     ],
     about: {
         //this text goes at the bottom of your home page.
-        content: "Known for his positive attitude, bringing a smile to everyone's face while diligently working to solve problems with creativity and persistence. Passionate about technology, he enjoys building applications that simplify and enrich people's lives. With skills in Python, JavaScript, Django, and React, Nizar creates applications that are intuitive and user-friendly.",
+        content: "Known for my positive attitude, bringing a smile to everyone's face while diligently working to solve problems with creativity and persistence. Passionate about technology, he enjoys building applications that simplify and enrich people's lives. With skills in Python, JavaScript, Django, and React, Nizar creates applications that are intuitive and user-friendly.",
         resume: "https://docs.google.com/document/d/1oesDY6KtSlZpp_juqJn7wj4dZKoQ5Nqo1zm95Qi49pQ/edit?usp=sharing" //link your resume here. it can be drive link or any other link
-    },
+},
     education: {
         visible: true, //set this to false if you want to omit this section
         educationList: [
@@ -66,28 +67,14 @@ export const userinfo = {
         ],
     },
     experience: {
-        visible: false, //set this to false if you want to omit this section
+        visible: true, //set this to false if you want to omit this section
         experienceList: [
             {
-                company: 'Dunder Mifflin', //company name eg.Microsoft
-                companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*', //companylogo
-                position: 'Regional Manager', //post you held eg.Senior SDE
-                time: 'March 2020 - May 2020', //timespan
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum' //eg. spearheaded the graphics team in designing SASS product UIs
-            },
-            {
-                company: 'Dunder Mifflin',
-                companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
-                position: 'Regional Manager',
-                time: 'March 2020 - May 2020',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum'
-            },
-            {
-                company: 'Dunder Mifflin',
-                companylogo: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/why-did-steve-carell-leave-the-office-1585597666.jpg?crop=0.563xw:0.844xh;0.287xw,0.128xh&resize=480:*',
-                position: 'Regional Manager',
-                time: 'March 2020 - May 2020',
-                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum'
+                company: 'potech', //company name eg.Microsoft
+                companylogo: 'potech.png', //companylogo
+                position: 'Full-Stack Developer', //post you held eg.Senior SDE
+                time: 'April 2024 - September 2024', //timespan
+                description: 'The Generative UI Prototype is an innovative web application that allows users to create, manage, and dynamically update Next.js projects using natural language processing and AI-driven code generation. The system provides a user-friendly interface for creating new projects, editing existing ones, and leveraging AI to make changes to the codebase based on user requests.' //eg. spearheaded the graphics team in designing SASS product UIs
             },
         ],
     },

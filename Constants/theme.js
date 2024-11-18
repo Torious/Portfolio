@@ -3,7 +3,7 @@ export const lightTheme = {
     body: '#fefefe',
     text: '#363537',
     subtext: '#707070',
-    secondary: '#cae4db',
+    secondary: '#CCE8FF', //
     tertiary: '#75cac3',
     accent: '#263859',
     boxShadow: '0px 2px 10px -2px rgba(134, 134, 134, 0.5)',
@@ -18,7 +18,7 @@ export const lightTheme = {
     subtext: '#D0D0D0',
     secondary: '#263859',
     tertiary: '#A2AAB9',
-    accent: '#cae4db',
+    accent: '#CCE8FF', //
     boxShadow: '0px 2px 10px -2px rgba(51, 51, 51, 0.5)',
     contrastText: '#101010',
     footerColor: '#16161D'
