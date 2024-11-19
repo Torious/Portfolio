@@ -121,11 +121,21 @@ const WorkProject = ({ currentTheme, project, id }) => {
                 {project.githubLink !== '' ? <Link href={project.githubLink} legacyBehavior><a><FontAwesomeIcon icon={faGithubAlt} /></a></Link> : <FontAwesomeIcon icon={faGithubAlt} onClick={showGitToast} />}
               </div>
             </Tooltip>
-            <Tooltip label="Project link" placement="right">
-              <div className={styles.socialIcon} style={{ color: currentTheme.subtext, borderColor: currentTheme.subtext }}>
-                {project.projectLink !== '' ? <Link href={project.projectLink} legacyBehavior><a><FontAwesomeIcon icon={faTelegramPlane} /></a></Link> : <FontAwesomeIcon icon={faTelegramPlane} onClick={showProjToast} />}
-              </div>
-            </Tooltip>
+            {project.projectLink && (
+              <Tooltip label="Project link" placement="right">
+                <div
+                  className={styles.socialIcon}
+                  style={{ color: currentTheme.subtext, borderColor: currentTheme.subtext }}
+                >
+                  <Link href={project.projectLink} legacyBehavior>
+                    <a>
+                      <FontAwesomeIcon icon={faTelegramPlane} />
+                    </a>
+                  </Link>
+                </div>
+              </Tooltip>
+            )}
+
           </div>
         </div>
         <div className={styles.cardbottom}>

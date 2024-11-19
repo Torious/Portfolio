@@ -1,5 +1,6 @@
+
 .homeheading{
-  height: 90vh;
+  height: 95vh;
   width: 100%;
   text-align: center;
   position: relative;
@@ -27,13 +28,13 @@
 .heading{
   position: relative;
   font-family: 'Playfair Display', serif;
-  font-size: 75px;
+  font-size: 60px;
   margin: 0 1rem;
 }
 
 .subheading{
   position: relative;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .cta1{
@@ -42,7 +43,7 @@
   position: relative;
   border-radius: 50px;
   transition: 0.2s ease-in-out;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .cta1:hover{

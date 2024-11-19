@@ -12,6 +12,18 @@ function MyApp({ Component, pageProps }) {
   const [theme, setTheme] = useState("dark")
 
   useEffect(() => {
+    const logSizeInfo = () => {
+      console.log('Window inner size:', window.innerWidth, 'x', window.innerHeight);
+      console.log('Device pixel ratio:', window.devicePixelRatio);
+    };
+  
+    logSizeInfo();
+    window.addEventListener('resize', logSizeInfo);
+  
+    return () => window.removeEventListener('resize', logSizeInfo);
+  }, []);
+
+  useEffect(() => {
     // Move localStorage logic to useEffect to avoid SSR issues
     const savedTheme = localStorage.getItem('theme')
     if (savedTheme) {

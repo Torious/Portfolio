@@ -26,7 +26,6 @@ export const projects = [
         name: 'Budget Lens',
         description: 'BudgetLens is a budgeting application...',
         githubLink: 'https://github.com/Torious/BudgetLensLandingPage',
-        projectLink: 'https://blabrm0uth.herokuapp.com/',
         tech: ['Kotlin', 'Django'],
         photo: [BUDGET0, BUDGET1, BUDGET2, BUDGET3, BUDGET4],
         carouselType: 'mobile', // specify mobile carousel
