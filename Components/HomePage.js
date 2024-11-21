@@ -12,6 +12,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { userinfo, ctaTexts, headings } from '../Constants/userinfo';
 import Education from './Education';
+import { AspectRatio } from '@chakra-ui/react';
 
 const HomePage = ({ currentTheme }) => {
     const workHeadingRef = useRef(null);
@@ -49,7 +50,7 @@ const HomePage = ({ currentTheme }) => {
                 </div>
                 <div className={morestyles.workmain} style={{ backgroundColor: currentTheme.secondary }}>
                     {projects.map((project, key) => (
-                        <div key={key} data-aos='fade-up'>
+                        <div key={key} data-aos='fade-up' >
                             <WorkProject currentTheme={currentTheme} project={project} id={key} />
                         </div>
                     ))}

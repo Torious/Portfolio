@@ -43,17 +43,7 @@ const Navbar = ({ toggleTheme, currentTheme }) => {
                     </div>
                     : null
                 }
-                <div className={morestyles.socialIconDiv}>
-                    {userinfo.socials ?
-                        userinfo.socials.map((social, key) => {
-                            return (
-                                <div className={morestyles.socialIcon} style={iconStyles} key={key}>
-                                    <Link href={social.link} legacyBehavior><a><FontAwesomeIcon icon={social.icon} /></a></Link>
-                                </div>
-                            )
-                        }) : null
-                    }
-                </div>
+                
             </div>
 
             {drawerVisible

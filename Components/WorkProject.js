@@ -2,7 +2,7 @@ import styles from '../styles/Work.module.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubAlt, faTelegramPlane } from "@fortawesome/free-brands-svg-icons";
 import Link from 'next/link';
-import { HStack, Tag, TagLabel, Tooltip } from "@chakra-ui/react";
+import { AspectRatio, HStack, Tag, TagLabel, Tooltip } from "@chakra-ui/react";
 import { useToast } from "@chakra-ui/react";
 import { useState } from 'react';
 import Image from 'next/image';
@@ -51,12 +51,11 @@ const WorkProject = ({ currentTheme, project, id }) => {
   return (
     <div
       className={styles.parentofparentcard}
-      style={{ justifyContent: id % 2 === 0 ? 'flex-start' : 'flex-end' }}
     >
-      <div className={styles.parentcard}>
+      <div className={styles.parentcard} >
         <div className={styles.cardtitle}>
-          <h1 className={styles.projtitle}>{project.name}</h1>
-          <HStack spacing={2}>
+          <h1 className={styles.projtitle}styles>{project.name}</h1>
+          <HStack spacing={1}>
             {project.tech.map((tech) => (
               <Tag
                 key={tech}
@@ -70,51 +69,53 @@ const WorkProject = ({ currentTheme, project, id }) => {
             ))}
           </HStack>
         </div>
+        {/* Apply conditional class based on carouselType */}
+        <div
+          className={`${styles.imageandsocials} ${project.carouselType === 'desktop' ? styles.desktopImageAndSocials : styles.mobileImageAndSocials
+            }`}
+        >
 
-        <div className={styles.imageandsocials}>
-          <DeviceFrameset device={deviceType} color="black">
-            <div
-              className={styles.card}
-              {...handlers}
+          {/* Apply conditional classes to the card */}
+          <div
+            className={`${styles.card} ${project.carouselType === 'desktop' ? styles.desktopCard : styles.mobileCard
+              }`}
+            {...handlers}
+            style={{
+              borderColor: currentTheme.footerColor,
+              position: 'relative',
+            }}
+          >
+            <Image
+              src={project.photo[index]}
+              alt="thumbnail image"
+              layout="fill"
+              objectFit="cover"
+            />
+            <button
+              onClick={back}
               style={{
-                borderColor: currentTheme.footerColor,
-                position: 'relative',
-                width: '100%',
-                height: '100%',
+                position: 'absolute',
+                top: '50%',
+                left: '10px',
+                color: arrowColor,
+                fontSize: '20px',
               }}
             >
-              <Image
-                src={project.photo[index]}
-                alt="thumbnail image"
-                layout="fill"
-                objectFit="cover"
-              />
-              <button
-                onClick={back}
-                style={{
-                  position: 'absolute',
-                  top: '50%',
-                  left: '10px',
-                  color: arrowColor,
-                  fontSize: '20px',
-                }}
-              >
-                &lt;
-              </button>
-              <button
-                onClick={ahead}
-                style={{
-                  position: 'absolute',
-                  top: '50%',
-                  right: '10px',
-                  color: arrowColor,
-                  fontSize: '20px',
-                }}
-              >
-                &gt;
-              </button>
-            </div>
-          </DeviceFrameset>
+              &lt;
+            </button>
+            <button
+              onClick={ahead}
+              style={{
+                position: 'absolute',
+                top: '50%',
+                right: '10px',
+                color: arrowColor,
+                fontSize: '20px',
+              }}
+            >
+              &gt;
+            </button>
+          </div>
           <div>
             <Tooltip label="Github link" placement="right">
               <div className={styles.socialIcon} style={{ color: currentTheme.subtext, borderColor: currentTheme.subtext }}>

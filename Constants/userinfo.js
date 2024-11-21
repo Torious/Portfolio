@@ -20,7 +20,7 @@ export const userinfo = {
     greeting: {
         //this text goes on your landing page
         title: "Hey there, I'm Nizar.",
-        subtitle: "A Full Stack Developer with a Software Engineering degree from Concordia University, Montreal. When I’m not coding, I thrive on strategic thinking and teamwork through competitive games like Chess and Valorant. Growing up both Lebanese and Ukrainian has provided me with a unique perspective towards different cultures and life. Ready to turn coffee into code together?"
+        subtitle: "A Full Stack Developer with a Software Engineering degree from Concordia University, Montreal. Growing up both Lebanese and Ukrainian has provided me with a unique perspective towards different cultures and life. When I’m not coding, I thrive on strategic thinking and teamwork through competitive games. Ready to turn coffee into code together?"
     },
     capabilities: [
         //this text goes on your home page in table format.
@@ -41,12 +41,12 @@ export const userinfo = {
         
         {
             category: "Languages",
-            skills: ["English(Fluent)", "Arabic(Fluent)", "Russian(Spoken)", "French(Beginner)"]
+            skills: ["English(Fluent)", "Arabic(Fluent)", "Russian(Conversational)", "French(Beginner)"]
         },
     ],
     about: {
         //this text goes at the bottom of your home page.
-        content: "Known for my positive attitude, bringing a smile to everyone's face while diligently working to solve problems with creativity and persistence. Passionate about technology, he enjoys building applications that simplify and enrich people's lives. With skills in Python, JavaScript, Django, and React, Nizar creates applications that are intuitive and user-friendly.",
+        content: "",
         resume: "https://docs.google.com/document/d/1oesDY6KtSlZpp_juqJn7wj4dZKoQ5Nqo1zm95Qi49pQ/edit?usp=sharing" //link your resume here. it can be drive link or any other link
 },
     education: {
