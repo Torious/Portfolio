@@ -62,7 +62,7 @@ export const userinfo = {
                 time: 'Sept 2017 - June 2023',
                 title: 'Bacherlors of Software Engineering',
                 organization: 'Concordia University, Gina Cody School of Engineering, Montreal, Canada',
-                description: 'GPA 3.0'
+                description: ''
             },
         ],
     },
