@@ -14,6 +14,14 @@ import BUDGET4 from '../styles/projects/4.png';
 
 export const projects = [
     {
+        name: 'Budget Lens',
+        description: 'BudgetLens is a budgeting application...',
+        githubLink: 'https://github.com/Torious/BudgetLensLandingPage',
+        tech: ['Kotlin', 'Django'],
+        photo: [BUDGET0, BUDGET1, BUDGET2, BUDGET3, BUDGET4],
+        carouselType: 'mobile', // specify mobile carousel
+    },
+    {
         name: 'Blabrm0uth',
         description: 'Blabrm0uth is a web application that generates captions...',
         githubLink: 'https://github.com/Torious/Blabrm0uth',
@@ -21,14 +29,6 @@ export const projects = [
         tech: ['React', 'Django'],
         photo: [PROJECTA_1, PROJECTA_2, PROJECTA_3, PROJECTA_4, PROJECTA_5],
         carouselType: 'desktop', // or 'mobile'
-    },
-    {
-        name: 'Budget Lens',
-        description: 'BudgetLens is a budgeting application...',
-        githubLink: 'https://github.com/Torious/BudgetLensLandingPage',
-        tech: ['Kotlin', 'Django'],
-        photo: [BUDGET0, BUDGET1, BUDGET2, BUDGET3, BUDGET4],
-        carouselType: 'mobile', // specify mobile carousel
     },
 ];
 

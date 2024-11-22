@@ -34,9 +34,18 @@ const HomePage = ({ currentTheme }) => {
                     style={{ backgroundColor: currentTheme.accent, color: currentTheme.contrastText, boxShadow: currentTheme.boxShadow }}>
                     My Work
                 </button>
-                <Link href={userinfo.about.resume} legacyBehavior>
-                    <a className={styles.cta1} style={{ backgroundColor: 'white', color: currentTheme.contrastText, boxShadow: currentTheme.boxShadow }}>My Resume</a>
-                </Link>
+                <a
+                    href="/Nizar-ElJurdi-CV.pdf"
+                    download="Nizar-ElJurdi-CV.pdf" // Suggested filename
+                    className={styles.cta1}
+                    style={{
+                        backgroundColor: 'white',
+                        color: currentTheme.contrastText,
+                        boxShadow: currentTheme.boxShadow
+                    }}
+                >
+                    My Resume
+                </a>
             </div>
             <div id="skills" className={styles.homeSkillSection} style={{ backgroundColor: currentTheme.secondary }}>
                 <Skills currentTheme={currentTheme} />
