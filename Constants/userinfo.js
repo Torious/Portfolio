@@ -26,17 +26,15 @@ export const userinfo = {
         //this text goes on your home page in table format.
         //For aesthetics, it is advisable for you to mention upto 4 catgeories links only.
         //For aesthetics, it is advisable for you to keep similar number of skills in each category
-        {
-            category: "Soft Skills",
-            skills: ["Creative", "Fast Learner", "Emotionally Intelligent", "Intuitive"]
-        },
-        {
-            category: "Languages", // eg.frontend, backend, devops etc
-            skills: ["Python", "JavaScript", "Java/Kotlin", "C++"] //eg. react, html, python etc.
-        },
+        
         {
             category: "Frameworks",
             skills: ["Django", "React", "Node", "Spring Boot"]
+        },
+
+        {
+            category: "Programming Languages", // eg.frontend, backend, devops etc
+            skills: ["Python", "JavaScript", "Java/Kotlin", "C++"] //eg. react, html, python etc.
         },
         
         {
