@@ -43,10 +43,7 @@ const WorkProject = ({ currentTheme, project, id }) => {
     onSwipedRight: () => back(),
   });
 
-  const arrowColor = project.carouselType === 'mobile' ? 'black' : 'white';
-
-  // Determine the device type based on carouselType
-  const deviceType = project.carouselType === 'mobile' ? 'Galaxy Note 8' : 'MacBook Pro';
+  const arrowColor = project.arrowColor
 
   return (
     <div

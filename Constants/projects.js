@@ -26,6 +26,7 @@ export const projects = [
         tech: ['Kotlin', 'Django'],
         photo: [BUDGET0, BUDGET1, BUDGET2, BUDGET3, BUDGET4],
         carouselType: 'mobile', // specify mobile carousel
+        arrowColor: 'black',
     },
     {
         name: 'Blabrm0uth',
@@ -35,6 +36,7 @@ export const projects = [
         tech: ['React', 'Django'],
         photo: [PROJECTA_1, PROJECTA_2, PROJECTA_3, PROJECTA_4, PROJECTA_5],
         carouselType: 'desktop', // or 'mobile'
+        arrowColor: 'white',
     },
     {
         name: 'HelpMePass',
@@ -43,6 +45,7 @@ export const projects = [
         tech: ['Bootstrap Studio'],
         photo: [PROJECTB_1, PROJECTB_2, PROJECTB_3, PROJECTB_4, PROJECTB_5, PROJECTB_6],
         carouselType: 'desktop', // or 'mobile'
+        arrowColor: 'black',
     },
 ];
 
