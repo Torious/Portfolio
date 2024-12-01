@@ -28,6 +28,8 @@ const HomePage = ({ currentTheme }) => {
             <div className={styles.homeheading} style={{ backgroundColor: currentTheme.secondary }}>
                 <h1 className={styles.heading}>{userinfo.greeting.title}</h1>
                 <h2 className={styles.subheading} style={{ color: currentTheme.subtext }}>{userinfo.greeting.subtitle}</h2>
+                
+                <h2 className={styles.subheading} style={{ color: currentTheme.subtext }}>"Believe you can and you're halfway there." – Theodore Roosevelt</h2>
                 <button
                     onClick={handleScrollToWork}
                     className={styles.cta1}
@@ -46,6 +48,7 @@ const HomePage = ({ currentTheme }) => {
                 >
                     My Resume
                 </a>
+                
             </div>
             <div id="skills" className={styles.homeSkillSection} style={{ backgroundColor: currentTheme.secondary }}>
                 <Skills currentTheme={currentTheme} />

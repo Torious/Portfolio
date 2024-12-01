@@ -20,7 +20,7 @@ export const userinfo = {
     greeting: {
         //this text goes on your landing page
         title: "Hey there, I'm Nizar.",
-        subtitle: "A Full Stack Developer with a Software Engineering degree from Concordia University, Montreal. Growing up both Lebanese and Ukrainian has provided me with a unique perspective towards different cultures and life. Ready to turn coffee into code together?"
+        subtitle: "A Full Stack Developer with a Software Engineering degree from Concordia University, Montreal. My Lebanese and Ukrainian heritage shaped my unique perspective on life. Driven by a relentless pursuit of excellence in everything I undertake."
     },
     capabilities: [
         //this text goes on your home page in table format.
