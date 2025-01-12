@@ -51,7 +51,7 @@ const WorkProject = ({ currentTheme, project, id }) => {
     >
       <div className={styles.parentcard} >
         <div className={styles.cardtitle}>
-          <h1 className={styles.projtitle}styles>{project.name}</h1>
+          <h1 className={styles.projtitle}>{project.name}</h1>
           <HStack spacing={1}>
             {project.tech.map((tech) => (
               <Tag
@@ -85,8 +85,8 @@ const WorkProject = ({ currentTheme, project, id }) => {
             <Image
               src={project.photo[index]}
               alt="thumbnail image"
-              layout="fill"
-              objectFit="cover"
+              fill
+              style={{ objectFit: 'cover' }}
             />
             <button
               onClick={back}

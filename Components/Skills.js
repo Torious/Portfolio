@@ -11,7 +11,7 @@ const Skills = ({ currentTheme }) => {
                 {userinfo.capabilities ?
                     userinfo.capabilities.map((value, key1) => {
                         return (
-                            <>
+                            <div key={key1}>
                                 <ul className={styles.skillList} data-aos="fade-up">
                                     <h1 className={styles.skillHeading} style={{ color: currentTheme.text }}>{value.category}</h1>
                                     {
@@ -24,7 +24,7 @@ const Skills = ({ currentTheme }) => {
                                     }
                                 </ul>
                                 {userinfo.capabilities.indexOf(value) === userinfo.capabilities.length - 1 ? null : <div className={styles.line} style={{ backgroundColor: currentTheme.subtext }} data-aos="fade-up"></div>}
-                            </>
+                            </div>
                         )
                     }) : null
                 }
