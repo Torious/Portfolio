@@ -29,7 +29,7 @@ const HomePage = ({ currentTheme }) => {
                 <h1 className={styles.heading}>{userinfo.greeting.title}</h1>
                 <h2 className={styles.subheading} style={{ color: currentTheme.subtext }}>{userinfo.greeting.subtitle}</h2>
                 
-                <h2 className={styles.subheading} style={{ color: currentTheme.subtext }}>"Believe you can and you're halfway there." – Theodore Roosevelt</h2>
+                <h2 className={styles.subheading} style={{ color: currentTheme.subtext }}>{userinfo.greeting.quote}</h2>
                 <button
                     onClick={handleScrollToWork}
                     className={styles.cta1}
