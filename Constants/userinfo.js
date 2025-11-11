@@ -78,7 +78,7 @@ export const userinfo = {
             },
             {
                 company: 'obsoft', //company name eg.Microsoft
-                companylogo: 'obsoft.png', //companylogo
+                companylogo: 'obsoft.jpeg', //companylogo
                 position: 'Software Engineer Intern', //post you held eg.Senior SDE
                 time: 'May 2024 - Dec. 2024', //timespan
                 description: ''//The Generative UI Prototype is an innovative web application that allows users to create, manage, and dynamically update Next.js projects using natural language processing and AI-driven code generation. The system provides a user-friendly interface for creating new projects, editing existing ones, and leveraging AI to make changes to the codebase based on user requests.' //eg. spearheaded the graphics team in designing SASS product UIs
