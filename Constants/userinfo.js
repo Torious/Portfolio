@@ -1,7 +1,8 @@
 //PLEASE FOLLOW THE FORMAT OF THIS FILE.
 
 import { faEnvelope, faGithubAlt, faLinkedinIn, faMediumM, faFacebook, faTwitter, faInstagram, faYoutube, faBehance } from "@fortawesome/free-brands-svg-icons"
-import potechLogo from '../public/potech.png';
+import sentriLogo from '../public/sentri.jpeg';
+import obsoftLogo from '../public/obsoft.png';
 
 export const userinfo = {
     logoText: "Nizar El Jurdi", //This text is visible on your navbar and footer like your logo.
@@ -69,12 +70,20 @@ export const userinfo = {
         visible: true, //set this to false if you want to omit this section
         experienceList: [
             {
-                company: 'potech', //company name eg.Microsoft
-                companylogo: 'potech.png', //companylogo
-                position: 'Full-Stack Developer', //post you held eg.Senior SDE
-                time: 'April 2024 - September 2024', //timespan
-                description: 'The Generative UI Prototype is an innovative web application that allows users to create, manage, and dynamically update Next.js projects using natural language processing and AI-driven code generation. The system provides a user-friendly interface for creating new projects, editing existing ones, and leveraging AI to make changes to the codebase based on user requests.' //eg. spearheaded the graphics team in designing SASS product UIs
+                company: 'Sentri AI', //company name eg.Microsoft
+                companylogo: 'sentri.jpeg', //companylogo
+                position: 'AI Software Engineer Intern', //post you held eg.Senior SDE
+                time: 'May 2025 - Aug. 2025', //timespan
+                description: '' 
             },
+            {
+                company: 'obsoft', //company name eg.Microsoft
+                companylogo: 'obsoft.png', //companylogo
+                position: 'Software Engineer Intern', //post you held eg.Senior SDE
+                time: 'May 2024 - Dec. 2024', //timespan
+                description: ''//The Generative UI Prototype is an innovative web application that allows users to create, manage, and dynamically update Next.js projects using natural language processing and AI-driven code generation. The system provides a user-friendly interface for creating new projects, editing existing ones, and leveraging AI to make changes to the codebase based on user requests.' //eg. spearheaded the graphics team in designing SASS product UIs
+            },
+
         ],
     },
     blogs: {

@@ -38,14 +38,5 @@ export const projects = [
         carouselType: 'desktop', // or 'mobile'
         arrowColor: 'white',
     },
-    {
-        name: 'HelpMePass',
-        description: 'Static website for UI/UX project',
-        githubLink: 'https://github.com/Torious/HelpMepass',
-        tech: ['Bootstrap Studio'],
-        photo: [PROJECTB_1, PROJECTB_2, PROJECTB_3, PROJECTB_4, PROJECTB_5, PROJECTB_6],
-        carouselType: 'desktop', // or 'mobile'
-        arrowColor: 'black',
-    },
 ];
 
