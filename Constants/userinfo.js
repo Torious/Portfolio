@@ -2,7 +2,7 @@
 
 import { faEnvelope, faGithubAlt, faLinkedinIn, faMediumM, faFacebook, faTwitter, faInstagram, faYoutube, faBehance } from "@fortawesome/free-brands-svg-icons"
 import sentriLogo from '../public/sentri.jpeg';
-import obsoftLogo from '../public/obsoft.png';
+import obsoftLogo from '../public/obsoft.jpeg';
 
 export const userinfo = {
     logoText: "Nizar El Jurdi", //This text is visible on your navbar and footer like your logo.
